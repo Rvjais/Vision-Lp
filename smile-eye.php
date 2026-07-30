@@ -202,15 +202,39 @@ $page_description = "SMILE Pro Eye surgery in Delhi at Vision Eye Centre. Next-g
             </div>
         </section>
 
-        <!-- Deep Dive -->
+        <!-- Service Showcase Image & Detailed Feature -->
         <section class="py-12 md:py-16 bg-white border-b border-slate-100">
             <div class="container mx-auto px-4 md:px-6">
-                <div class="max-w-3xl mx-auto space-y-6 text-center">
-                    <span class="text-accent font-bold uppercase tracking-widest text-xs">Flapless Vision Correction</span>
-                    <h2 class="text-3xl md:text-4xl font-heading font-black text-primary">Why SMILE Pro is the Future of Eye Surgery</h2>
-                    <p class="text-slate-600 leading-relaxed font-medium text-sm md:text-base">
-                        Unlike traditional LASIK that cuts a 20mm circular flap in the cornea, SMILE Pro (Small Incision Lenticule Extraction) uses a femtosecond laser to create a thin lenticule inside the cornea, extracted through a tiny 2mm keyhole opening.
-                    </p>
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center max-w-6xl mx-auto">
+                    <!-- Service Image -->
+                    <div class="lg:col-span-5">
+                        <div class="rounded-3xl overflow-hidden shadow-2xl border border-slate-200">
+                            <img src="assets/images/smile_pro_eye.png" alt="SMILE Pro Eye Surgery VisuMax 800 Technology" class="w-full h-auto object-cover">
+                        </div>
+                    </div>
+
+                    <!-- Content -->
+                    <div class="lg:col-span-7 space-y-4">
+                        <span class="text-accent font-bold uppercase tracking-widest text-xs">Flapless Vision Correction</span>
+                        <h2 class="text-3xl md:text-4xl font-heading font-black text-primary">Why SMILE Pro is the Future of Eye Surgery</h2>
+                        <p class="text-slate-600 leading-relaxed font-medium text-sm md:text-base">
+                            Unlike traditional LASIK that cuts a 20mm circular flap in the cornea, SMILE Pro (Small Incision Lenticule Extraction) uses a femtosecond laser to create a thin lenticule inside the cornea, extracted through a tiny 2mm keyhole opening.
+                        </p>
+                        <div class="space-y-2 pt-2 text-sm text-slate-700">
+                            <div class="flex items-center gap-3">
+                                <i class="fa-solid fa-circle-check text-accent text-base"></i>
+                                <span>9-Second ultra-fast laser application per eye using VisuMax 800</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <i class="fa-solid fa-circle-check text-accent text-base"></i>
+                                <span>No corneal flap creation—prevents flap displacement or trauma risk</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <i class="fa-solid fa-circle-check text-accent text-base"></i>
+                                <span>Preserves corneal nerve structure to prevent dry eye syndrome</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto mt-12">
@@ -241,17 +265,15 @@ $page_description = "SMILE Pro Eye surgery in Delhi at Vision Eye Centre. Next-g
             </div>
         </section>
 
-        <!-- Doctors -->
+        <!-- Doctors with Real Photos -->
         <section class="py-12 bg-cream border-b border-slate-100">
             <div class="container mx-auto px-4 md:px-6">
                 <div class="text-center max-w-2xl mx-auto mb-8">
                     <h2 class="text-3xl font-heading font-black text-primary">Expert SMILE Pro Surgeons</h2>
                 </div>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-                    <div class="bg-white p-6 rounded-3xl border border-slate-200 flex items-center gap-4">
-                        <div class="w-16 h-16 rounded-full bg-primary text-white flex items-center justify-center text-3xl font-bold flex-shrink-0">
-                            <i class="fa-solid fa-user-doctor"></i>
-                        </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
+                    <div class="bg-white p-6 rounded-3xl border border-slate-200 flex items-center gap-4 shadow-xs">
+                        <img src="assets/images/dr-tushar-grover.webp" alt="Dr. Tushar Grover" class="w-20 h-20 rounded-full object-cover border-4 border-teal flex-shrink-0 shadow-md">
                         <div>
                             <h4 class="font-bold text-primary text-lg">Dr. Tushar Grover</h4>
                             <p class="text-xs font-bold text-accent">Medical Director &amp; Refractive Specialist</p>
@@ -259,13 +281,11 @@ $page_description = "SMILE Pro Eye surgery in Delhi at Vision Eye Centre. Next-g
                         </div>
                     </div>
 
-                    <div class="bg-white p-6 rounded-3xl border border-slate-200 flex items-center gap-4">
-                        <div class="w-16 h-16 rounded-full bg-primary text-white flex items-center justify-center text-3xl font-bold flex-shrink-0">
-                            <i class="fa-solid fa-award text-gold"></i>
-                        </div>
+                    <div class="bg-white p-6 rounded-3xl border border-slate-200 flex items-center gap-4 shadow-xs">
+                        <img src="assets/images/chairman-dr-grover.webp" alt="Prof. (Dr) A. K. Grover" class="w-20 h-20 rounded-full object-cover border-4 border-gold flex-shrink-0 shadow-md">
                         <div>
                             <h4 class="font-bold text-primary text-lg">Prof. (Dr) A. K. Grover</h4>
-                            <p class="text-xs font-bold text-accent">Padma Shri Awardee &amp; Chairman</p>
+                            <p class="text-xs font-bold text-gold">Padma Shri Awardee &amp; Chairman</p>
                             <p class="text-xs text-slate-500 mt-1">M.D. (AIIMS), FRCS (Glasgow), Chairman at Sir Ganga Ram Hospital.</p>
                         </div>
                     </div>

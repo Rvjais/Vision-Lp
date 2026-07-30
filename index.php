@@ -70,7 +70,7 @@ $page_description = "Vision Eye Centre is NABH accredited & trusted as the best 
         </div>
     </div>
 
-    <!-- DISTRACTION-FREE HEADER: ONLY LOGO & CALL BUTTON (NO OTHER LINKS) -->
+    <!-- DISTRACTION-FREE HEADER: ONLY LOGO & CALL BUTTON -->
     <header class="w-full bg-white/95 backdrop-blur-md border-b border-slate-100 sticky top-0 z-50 transition-all py-3.5">
         <div class="container mx-auto px-4 md:px-6 flex items-center justify-between">
             <!-- Brand Logo Image -->
@@ -282,7 +282,7 @@ $page_description = "Vision Eye Centre is NABH accredited & trusted as the best 
             </div>
         </section>
 
-        <!-- Doctor Leadership -->
+        <!-- Doctor Leadership with Real Photos -->
         <section id="doctors" class="py-12 md:py-16 bg-cream border-b border-slate-100">
             <div class="container mx-auto px-4 md:px-6">
                 <div class="text-center max-w-2xl mx-auto mb-8">
@@ -290,26 +290,31 @@ $page_description = "Vision Eye Centre is NABH accredited & trusted as the best 
                     <h2 class="text-3xl font-heading font-black text-primary mt-1">Our Senior Surgeons</h2>
                 </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-                    <div class="bg-white p-6 rounded-3xl border border-slate-200 flex items-center gap-4 shadow-xs">
-                        <div class="w-16 h-16 rounded-full bg-primary text-white flex items-center justify-center text-3xl font-bold flex-shrink-0">
-                            <i class="fa-solid fa-award text-gold"></i>
-                        </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+                    <div class="bg-white p-6 rounded-3xl border border-slate-200 flex flex-col items-center text-center space-y-3 shadow-xs">
+                        <img src="assets/images/chairman-dr-grover.webp" alt="Prof. (Dr) A. K. Grover" class="w-24 h-24 rounded-full object-cover border-4 border-gold shadow-md">
                         <div>
                             <h4 class="font-bold text-primary text-lg">Prof. (Dr) A. K. Grover</h4>
-                            <p class="text-xs font-bold text-accent">Padma Shri Awardee &amp; Chairman</p>
-                            <p class="text-xs text-slate-500 mt-1">M.D. (AIIMS), FRCS (Glasgow), Chairman Ophthalmology Dept Sir Ganga Ram Hospital.</p>
+                            <p class="text-xs font-bold text-gold">Padma Shri Awardee &amp; Chairman</p>
+                            <p class="text-xs text-slate-500 mt-2">M.D. (AIIMS), FRCS (Glasgow), Chairman Ophthalmology Dept Sir Ganga Ram Hospital.</p>
                         </div>
                     </div>
 
-                    <div class="bg-white p-6 rounded-3xl border border-slate-200 flex items-center gap-4 shadow-xs">
-                        <div class="w-16 h-16 rounded-full bg-primary text-white flex items-center justify-center text-3xl font-bold flex-shrink-0">
-                            <i class="fa-solid fa-user-doctor"></i>
+                    <div class="bg-white p-6 rounded-3xl border border-slate-200 flex flex-col items-center text-center space-y-3 shadow-xs">
+                        <img src="assets/images/dr-apoorv-grover.webp" alt="Dr. Apoorv Grover" class="w-24 h-24 rounded-full object-cover border-4 border-accent shadow-md">
+                        <div>
+                            <h4 class="font-bold text-primary text-lg">Dr. Apoorv Grover</h4>
+                            <p class="text-xs font-bold text-accent">Medical Director &amp; Retina Specialist</p>
+                            <p class="text-xs text-slate-500 mt-2">DNB, MNAMS, FICO, Fellowship Vitreo Retina &amp; Uvea (Aravind Eye Hospital).</p>
                         </div>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-3xl border border-slate-200 flex flex-col items-center text-center space-y-3 shadow-xs">
+                        <img src="assets/images/dr-tushar-grover.webp" alt="Dr. Tushar Grover" class="w-24 h-24 rounded-full object-cover border-4 border-teal shadow-md">
                         <div>
                             <h4 class="font-bold text-primary text-lg">Dr. Tushar Grover</h4>
-                            <p class="text-xs font-bold text-accent">Medical Director &amp; Refractive Specialist</p>
-                            <p class="text-xs text-slate-500 mt-1">MS (Aravind Eye Hospital), FAICO (Cornea/Refractive), Narayana Nethralaya Fellow.</p>
+                            <p class="text-xs font-bold text-teal">Medical Director &amp; LASIK Specialist</p>
+                            <p class="text-xs text-slate-500 mt-2">MS (Aravind), FAICO (Cornea/Refractive), Narayana Nethralaya Fellow, GMHE (IIM-B).</p>
                         </div>
                     </div>
                 </div>
