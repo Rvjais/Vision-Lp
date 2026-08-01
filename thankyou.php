@@ -1,6 +1,11 @@
 <?php
 $page_title = "Thank You - Vision Eye Centre Delhi";
 $page_description = "Thank you for reaching out to Vision Eye Centre. Our patient care team will contact you shortly to confirm your appointment.";
+
+$service = $_POST['service'] ?? $_GET['service'] ?? '';
+$referer = $_SERVER['HTTP_REFERER'] ?? '';
+$is_wavelight = (stripos($service, 'wavelight') !== false) || (stripos($referer, 'wavelight') !== false);
+$is_smile = (stripos($service, 'smile') !== false) || (stripos($referer, 'smile') !== false);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -10,6 +15,38 @@ $page_description = "Thank you for reaching out to Vision Eye Centre. Our patien
     <title><?php echo $page_title; ?></title>
     <meta name="description" content="<?php echo $page_description; ?>">
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11323462665"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'AW-11323462665');
+    </script>
+
+    <?php if ($is_wavelight || (!$is_wavelight && !$is_smile)): ?>
+    <!-- Event snippet for Submit lead form wave light conversion page -->
+    <script>
+      gtag('event', 'conversion', {
+          'send_to': 'AW-11323462665/VqrrCLfBz9kcEImouZcq',
+          'value': 1.0,
+          'currency': 'INR'
+      });
+    </script>
+    <?php endif; ?>
+
+    <?php if ($is_smile || (!$is_wavelight && !$is_smile)): ?>
+    <!-- Event snippet for Submit lead form Smile conversion page -->
+    <script>
+      gtag('event', 'conversion', {
+          'send_to': 'AW-11323462665/PP9PCNvv0NkcEImouZcq',
+          'value': 1.0,
+          'currency': 'INR'
+      });
+    </script>
+    <?php endif; ?>
     
     <!-- Google Fonts: Inter & Quicksand -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
