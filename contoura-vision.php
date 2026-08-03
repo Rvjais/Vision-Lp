@@ -67,22 +67,23 @@ $page_description = "Get Contoura Vision surgery in Delhi at Vision Eye Centre. 
     </div>
 
     <!-- DISTRACTION-FREE HEADER: ONLY LOGO & CALL BUTTON -->
-    <header class="site-header w-full py-3.5 sticky top-0 z-50">
-        <div class="container mx-auto px-4 md:px-6 flex items-center justify-between">
+    <header class="site-header w-full py-3 sm:py-3.5 sticky top-0 z-50">
+        <div class="container mx-auto px-4 md:px-6 flex items-center justify-between gap-2 sm:gap-4">
             <!-- Logo Image -->
-            <a href="index.php" class="flex items-center gap-3 group">
-                <img src="assets/images/small-logo.png" alt="Vision Eye Centre Logo" class="h-10 md:h-12 w-auto object-contain">
-                <div class="flex flex-col">
-                    <span class="font-heading font-semibold text-primary text-lg md:text-[22px] tracking-[-0.01em] leading-none">Vision Eye Centre</span>
-                    <small class="text-[11px] text-slate-500 font-medium">Excellence … with a humane touch</small>
+            <a href="index.php" class="flex items-center gap-2 sm:gap-3 group min-w-0">
+                <img src="assets/images/small-logo.png" alt="Vision Eye Centre Logo" class="h-8 sm:h-10 md:h-12 w-auto object-contain flex-shrink-0">
+                <div class="flex flex-col min-w-0">
+                    <span class="font-heading font-semibold text-primary text-sm sm:text-lg md:text-[22px] tracking-[-0.01em] leading-tight truncate">Vision Eye Centre</span>
+                    <small class="hidden sm:block text-[11px] text-slate-500 font-medium">Excellence … with a humane touch</small>
                 </div>
             </a>
 
             <!-- Call Button Only -->
-            <div>
-                <a href="tel:+919711004422" class="btn-call inline-flex items-center gap-2 text-xs sm:text-sm whitespace-nowrap">
+            <div class="flex-shrink-0">
+                <a href="tel:+919711004422" class="btn-call inline-flex items-center gap-1.5 sm:gap-2 text-xs sm:text-sm whitespace-nowrap">
                     <i class="fa-solid fa-phone"></i>
-                    <span>Call: +91 9711004422</span>
+                    <span class="hidden sm:inline">Call: +91 9711004422</span>
+                    <span class="sm:hidden font-semibold">Call Now</span>
                 </a>
             </div>
         </div>

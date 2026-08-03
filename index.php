@@ -71,22 +71,23 @@ $page_description = "Vision Eye Centre is NABH accredited & trusted as the best 
     </div>
 
     <!-- DISTRACTION-FREE HEADER: ONLY LOGO & CALL BUTTON -->
-    <header class="w-full bg-white/95 backdrop-blur-md border-b border-slate-100 sticky top-0 z-50 transition-all py-3.5">
-        <div class="container mx-auto px-4 md:px-6 flex items-center justify-between">
+    <header class="w-full bg-white/95 backdrop-blur-md border-b border-slate-100 sticky top-0 z-50 transition-all py-3 sm:py-3.5">
+        <div class="container mx-auto px-4 md:px-6 flex items-center justify-between gap-2 sm:gap-4">
             <!-- Brand Logo Image -->
-            <a href="index.php" class="flex items-center gap-3 group">
-                <img src="assets/images/small-logo.png" alt="Vision Eye Centre Logo" class="h-10 md:h-12 w-auto object-contain">
-                <div class="flex flex-col">
-                    <span class="font-heading font-black text-primary text-xl md:text-2xl tracking-tight leading-none group-hover:text-accent transition-colors">Vision Eye Centre</span>
-                    <small class="text-[11px] text-slate-500 font-medium tracking-wide">Excellence … with a humane touch</small>
+            <a href="index.php" class="flex items-center gap-2 sm:gap-3 group min-w-0">
+                <img src="assets/images/small-logo.png" alt="Vision Eye Centre Logo" class="h-8 sm:h-10 md:h-12 w-auto object-contain flex-shrink-0">
+                <div class="flex flex-col min-w-0">
+                    <span class="font-heading font-black text-primary text-sm sm:text-xl md:text-2xl tracking-tight leading-tight group-hover:text-accent transition-colors truncate">Vision Eye Centre</span>
+                    <small class="hidden sm:block text-[11px] text-slate-500 font-medium tracking-wide">Excellence … with a humane touch</small>
                 </div>
             </a>
 
             <!-- CTA Phone Button Only -->
-            <div>
-                <a href="tel:+919711004422" class="inline-flex items-center gap-2 px-4 py-2.5 bg-accent hover:bg-sky-600 text-white font-bold rounded-full transition-all text-xs sm:text-sm shadow-md shadow-accent/20">
+            <div class="flex-shrink-0">
+                <a href="tel:+919711004422" class="inline-flex items-center gap-1.5 sm:gap-2 px-3 py-2 sm:px-4 sm:py-2.5 bg-accent hover:bg-sky-600 text-white font-bold rounded-full transition-all text-xs sm:text-sm shadow-md shadow-accent/20 whitespace-nowrap">
                     <i class="fa-solid fa-phone"></i>
-                    <span>Call: +91 9711004422</span>
+                    <span class="hidden sm:inline">Call: +91 9711004422</span>
+                    <span class="sm:hidden font-semibold">Call Now</span>
                 </a>
             </div>
         </div>

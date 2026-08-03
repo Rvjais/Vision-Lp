@@ -23,8 +23,11 @@ a:hover{color:var(--accent-dark)}
 /* ---------- header ---------- */
 .site-header{background:var(--paper);border-bottom:1px solid var(--line-strong)}
 .btn-call{
-  padding:11px 20px;border-radius:var(--r);font-weight:600;color:#fff;
-  background:var(--brand);transition:background .15s var(--ease);
+  padding:8px 14px;border-radius:var(--r);font-weight:600;color:#fff;
+  background:var(--brand);transition:background .15s var(--ease);flex-shrink:0;
+}
+@media (min-width: 640px) {
+  .btn-call{padding:11px 20px;}
 }
 .btn-call:hover{color:#fff;background:var(--brand-700)}
 

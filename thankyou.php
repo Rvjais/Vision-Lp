@@ -72,20 +72,21 @@ $is_smile = (stripos($service, 'smile') !== false) || (stripos($referer, 'smile'
 <body class="min-h-screen bg-slate-50 text-slate-800 flex flex-col font-sans">
 
     <!-- Header -->
-    <header class="w-full bg-white border-b border-slate-200 py-4 shadow-xs">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
-            <a href="index.php" class="flex items-center gap-3">
-                <img src="assets/images/small-logo.png" alt="Vision Eye Centre Logo" class="h-10 md:h-12 w-auto object-contain">
-                <div class="flex flex-col">
-                    <span class="font-bold text-primary text-xl tracking-tight leading-none">Vision Eye Centre</span>
-                    <small class="text-[11px] text-slate-500 font-medium">Excellence … with a humane touch</small>
+    <header class="w-full bg-white border-b border-slate-200 py-3 sm:py-4 shadow-xs">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between gap-2 sm:gap-4">
+            <a href="index.php" class="flex items-center gap-2 sm:gap-3 min-w-0">
+                <img src="assets/images/small-logo.png" alt="Vision Eye Centre Logo" class="h-8 sm:h-10 md:h-12 w-auto object-contain flex-shrink-0">
+                <div class="flex flex-col min-w-0">
+                    <span class="font-bold text-primary text-sm sm:text-xl tracking-tight leading-tight truncate">Vision Eye Centre</span>
+                    <small class="hidden sm:block text-[11px] text-slate-500 font-medium">Excellence … with a humane touch</small>
                 </div>
             </a>
             
-            <div>
-                <a href="tel:+919711004422" class="inline-flex items-center gap-2 px-4 py-2 bg-sky-50 text-accent hover:bg-sky-100 font-bold rounded-full transition-all text-sm border border-sky-100">
+            <div class="flex-shrink-0">
+                <a href="tel:+919711004422" class="inline-flex items-center gap-1.5 sm:gap-2 px-3 py-1.5 sm:px-4 sm:py-2 bg-sky-50 text-accent hover:bg-sky-100 font-bold rounded-full transition-all text-xs sm:text-sm border border-sky-100 whitespace-nowrap">
                     <i class="fa-solid fa-phone"></i>
-                    <span>+91 9711004422</span>
+                    <span class="hidden sm:inline">+91 9711004422</span>
+                    <span class="sm:hidden font-semibold">Call Now</span>
                 </a>
             </div>
         </div>
