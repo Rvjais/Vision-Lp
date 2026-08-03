@@ -1,0 +1,93 @@
+/* Vision Eye Centre — service landing page visual layer.
+   Editorial, flat, clinical. No gradients. Hairlines + whitespace do the work. */
+
+:root{
+  --brand:#123A5E; --brand-700:#0E2E4A; --brand-900:#0B2338;
+  --accent:#1B6CA8; --accent-dark:#14547F; --teal:#0D7A72; --gold:#9A6212;
+  --canvas:#F6F6F3; --paper:#FFFFFF;
+  --line:#E4E3DE; --line-strong:#D3D2CB; --line-dark:rgba(255,255,255,.16);
+  --ink:#16202B; --ink-soft:#5A6672;
+  --r:6px; --r-lg:10px;
+  --ease:cubic-bezier(.2,.6,.3,1);
+}
+
+html{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+body{background:var(--canvas);color:var(--ink)}
+h1,h2,h3,h4{text-wrap:balance}
+p{text-wrap:pretty}
+img{max-width:100%}
+a{color:var(--accent);text-decoration:none}
+a:hover{color:var(--accent-dark)}
+::selection{background:rgba(27,108,168,.16)}
+
+/* ---------- header ---------- */
+.site-header{background:var(--paper);border-bottom:1px solid var(--line-strong)}
+.btn-call{
+  padding:11px 20px;border-radius:var(--r);font-weight:600;color:#fff;
+  background:var(--brand);transition:background .15s var(--ease);
+}
+.btn-call:hover{color:#fff;background:var(--brand-700)}
+
+/* ---------- hero ---------- */
+.hero{position:relative}
+.pill{
+  padding:6px 14px;border-radius:999px;color:#CFE0EE;
+  border:1px solid rgba(255,255,255,.22);font-weight:500;letter-spacing:.02em;
+}
+.hl-accent{color:#9CC4DF;font-style:italic}
+
+/* stat row: hairline-separated columns, not boxes */
+.stat-tile{
+  padding:2px 0 2px 18px;border-left:1px solid var(--line-dark);
+}
+.stat-tile h4{letter-spacing:0;font-weight:600}
+.stat-tile p{letter-spacing:.02em}
+
+/* ---------- form ---------- */
+.form-card{background:var(--paper);border:1px solid var(--line-strong);border-radius:var(--r-lg);
+  box-shadow:0 18px 40px -30px rgba(11,35,56,.6)}
+.field{
+  width:100%;padding:11px 13px;font-size:14px;font-family:inherit;color:var(--ink);
+  background:var(--paper);border:1px solid var(--line-strong);border-radius:var(--r);outline:none;
+  transition:border-color .15s var(--ease), box-shadow .15s var(--ease);
+}
+.field::placeholder{color:#9EA5AC}
+.field:hover{border-color:#B6BCC2}
+.field:focus{border-color:var(--accent);box-shadow:0 0 0 3px rgba(27,108,168,.13)}
+select.field{cursor:pointer;appearance:none;-webkit-appearance:none;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%235A6672' stroke-width='2.5' stroke-linecap='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat:no-repeat;background-position:right 13px center;padding-right:36px}
+textarea.field{resize:none;line-height:1.55}
+.btn-primary{
+  width:100%;display:flex;align-items:center;justify-content:center;gap:10px;
+  padding:15px 20px;border-radius:var(--r);font-weight:600;font-size:15px;letter-spacing:.01em;color:#fff;
+  background:var(--accent);transition:background .15s var(--ease);
+}
+.btn-primary:hover{background:var(--accent-dark)}
+
+/* ---------- content ---------- */
+.eyebrow{
+  display:block;font-family:Inter,system-ui,sans-serif;
+  font-size:11px;font-weight:600;letter-spacing:.2em;
+  text-transform:uppercase;color:var(--ink-soft);
+}
+.rule{width:40px;height:1px;background:var(--brand);margin-top:20px;opacity:.5}
+.sec-head .rule{margin-left:auto;margin-right:auto}
+
+.card{background:var(--paper);border:1px solid var(--line);border-radius:var(--r-lg);
+  transition:border-color .2s var(--ease)}
+.card:hover{border-color:var(--line-strong)}
+.icon-chip{
+  width:38px;height:38px;border-radius:var(--r);display:flex;align-items:center;justify-content:center;
+  font-size:16px;
+}
+.img-frame{border:1px solid var(--line-strong);border-radius:var(--r-lg);overflow:hidden;background:var(--paper)}
+.img-frame img{display:block;width:100%}
+
+.band-dark{background:var(--brand-900);color:#fff}
+
+.check-row{display:flex;align-items:flex-start;gap:12px}
+.check-row + .check-row{border-top:1px solid var(--line);padding-top:12px}
+
+/* numeric/serif display */
+.display{font-family:'Source Serif 4',Georgia,serif;font-weight:600;letter-spacing:-.01em}
