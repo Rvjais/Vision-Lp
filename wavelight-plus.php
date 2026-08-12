@@ -291,6 +291,47 @@ $page_description = "Wavelight Plus (InnovEyes) Ray Tracing laser eye surgery at
             </div>
         </section>
 
+        <!-- Why You Need Us Section -->
+        <section class="py-12 md:py-16 bg-white border-b border-[#E4E3DE]">
+            <div class="container mx-auto px-4 md:px-6">
+                <div class="text-center max-w-2xl mx-auto mb-12">
+                    <span class="eyebrow text-accent font-bold tracking-widest uppercase text-xs block mb-2">Why Choose Us</span>
+                    <h2 class="text-[30px] md:text-[38px] font-heading font-semibold text-primary tracking-[-0.015em] mt-4 leading-[1.2]">Why You Need Us</h2>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="card p-6 bg-slate-50 rounded-2xl border border-slate-100 hover:shadow-lg transition-shadow">
+                        <div class="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center mb-4">
+                            <i class="fa-solid fa-user-doctor text-accent text-xl"></i>
+                        </div>
+                        <h3 class="font-heading text-[19px] font-semibold text-primary mb-2">Expert Surgeons</h3>
+                        <p class="text-[13px] text-slate-600 leading-relaxed">Highly experienced doctors trained at premier institutions like AIIMS and Aravind Eye Hospital.</p>
+                    </div>
+                    <div class="card p-6 bg-slate-50 rounded-2xl border border-slate-100 hover:shadow-lg transition-shadow">
+                        <div class="w-12 h-12 rounded-full bg-teal/10 flex items-center justify-center mb-4">
+                            <i class="fa-solid fa-microchip text-teal text-xl"></i>
+                        </div>
+                        <h3 class="font-heading text-[19px] font-semibold text-primary mb-2">Advanced Technology</h3>
+                        <p class="text-[13px] text-slate-600 leading-relaxed">State-of-the-art diagnostic and surgical equipment ensuring precision and safety.</p>
+                    </div>
+                    <div class="card p-6 bg-slate-50 rounded-2xl border border-slate-100 hover:shadow-lg transition-shadow">
+                        <div class="w-12 h-12 rounded-full bg-gold/10 flex items-center justify-center mb-4">
+                            <i class="fa-solid fa-award text-gold text-xl"></i>
+                        </div>
+                        <h3 class="font-heading text-[19px] font-semibold text-primary mb-2">NABH Accredited</h3>
+                        <p class="text-[13px] text-slate-600 leading-relaxed">Recognized for maintaining the highest standards of healthcare quality and patient safety.</p>
+                    </div>
+                    <div class="card p-6 bg-slate-50 rounded-2xl border border-slate-100 hover:shadow-lg transition-shadow">
+                        <div class="w-12 h-12 rounded-full bg-sky-500/10 flex items-center justify-center mb-4">
+                            <i class="fa-solid fa-hand-holding-medical text-sky-500 text-xl"></i>
+                        </div>
+                        <h3 class="font-heading text-[19px] font-semibold text-primary mb-2">Humane Touch</h3>
+                        <p class="text-[13px] text-slate-600 leading-relaxed">Compassionate care focusing on patient comfort and clear communication at every step.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Locations -->
         <section class="py-20 md:py-24 band-dark text-white">
             <div class="container mx-auto px-4 md:px-6">
@@ -318,9 +359,76 @@ $page_description = "Wavelight Plus (InnovEyes) Ray Tracing laser eye surgery at
     </main>
 
     <!-- Footer -->
-    <footer class="bg-[#0B2A44] text-slate-400 py-8 text-xs text-center">
-        <p>&copy; <?php echo date("Y"); ?> Vision Eye Centre. All rights reserved.</p>
+    <footer class="bg-slate-900 text-slate-300 py-12 text-sm border-t border-slate-800">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="space-y-4">
+                    <h4 class="text-white font-bold text-lg">Vision Eye Centre</h4>
+                    <p class="text-xs text-slate-400">Excellence with a humane touch. Providing the highest quality eye care with a strong focus on patient safety, precision laser technology, and compassionate comfort.</p>
+                </div>
+                <div class="space-y-4">
+                    <h4 class="text-white font-bold text-lg">Quick Links</h4>
+                    <ul class="space-y-2 text-xs">
+                        <li><a href="index.php" class="hover:text-accent transition-colors">Home</a></li>
+                        <li><a href="contoura-vision.php" class="hover:text-accent transition-colors">Contoura Vision</a></li>
+                        <li><a href="wavelight-plus.php" class="hover:text-accent transition-colors">Wavelight Plus</a></li>
+                        <li><a href="smile-eye.php" class="hover:text-accent transition-colors">SMILE Pro Eye</a></li>
+                        <li><a href="privacy-policy.php" class="hover:text-accent transition-colors">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="space-y-4">
+                    <h4 class="text-white font-bold text-lg">Our Locations</h4>
+                    <ul class="space-y-2 text-xs">
+                        <li><strong class="text-white">South Delhi:</strong> 19, Siri Fort Road, Near Gargi College, New Delhi – 110049</li>
+                        <li><strong class="text-white">West Delhi:</strong> 12/27, West Patel Nagar, Near Arya Samaj Mandir, New Delhi – 110008</li>
+                    </ul>
+                </div>
+                <div class="space-y-4">
+                    <h4 class="text-white font-bold text-lg">Contact Us</h4>
+                    <ul class="space-y-2 text-xs">
+                        <li><i class="fa-solid fa-phone text-accent"></i> <a href="tel:+919711004422" class="hover:text-white transition-colors">+91 9711004422</a></li>
+                        <li><i class="fa-solid fa-envelope text-accent"></i> <a href="mailto:visioneyecentrehr@gmail.com" class="hover:text-white transition-colors">visioneyecentrehr@gmail.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-slate-800 text-center text-xs text-slate-500">
+                <p>&copy; <?php echo date("Y"); ?> Vision Eye Centre. All rights reserved.</p>
+            </div>
+        </div>
     </footer>
 
+    <!-- WhatsApp Widget -->
+    <a href="https://wa.me/919711004422" target="_blank" rel="noopener noreferrer" class="fixed bottom-6 right-6 bg-[#25D366] text-white p-3 rounded-full shadow-2xl hover:bg-[#128C7E] transition-colors z-[100] flex items-center justify-center animate-bounce" style="width: 60px; height: 60px;">
+        <i class="fa-brands fa-whatsapp text-3xl"></i>
+    </a>
+
+    <!-- Formester Submission Script -->
+    <script>
+        const leadForm = document.getElementById('lead-form');
+        if (leadForm) {
+            leadForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const form = this;
+                const submitBtn = form.querySelector('button[type="submit"]');
+                const originalText = submitBtn.innerHTML;
+                submitBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Submitting...';
+                submitBtn.disabled = true;
+
+                const formData = new FormData(form);
+                fetch('https://app.formester.com/forms/LRTn5uhum/submissions.json', {
+                    method: 'POST',
+                    body: formData,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                }).then(response => {
+                    window.location.href = "thankyou.php?service=" + encodeURIComponent(formData.get('service') || '');
+                }).catch(error => {
+                    console.error(error);
+                    window.location.href = "thankyou.php?service=" + encodeURIComponent(formData.get('service') || '');
+                });
+            });
+        }
+    </script>
 </body>
 </html>
