@@ -26,27 +26,7 @@ $is_smile = (stripos($service, 'smile') !== false) || (stripos($referer, 'smile'
       gtag('config', 'AW-11323462665');
     </script>
 
-    <?php if ($is_wavelight || (!$is_wavelight && !$is_smile)): ?>
-    <!-- Event snippet for Submit lead form wave light conversion page -->
-    <script>
-      gtag('event', 'conversion', {
-          'send_to': 'AW-11323462665/VqrrCLfBz9kcEImouZcq',
-          'value': 1.0,
-          'currency': 'INR'
-      });
-    </script>
-    <?php endif; ?>
 
-    <?php if ($is_smile || (!$is_wavelight && !$is_smile)): ?>
-    <!-- Event snippet for Submit lead form Smile conversion page -->
-    <script>
-      gtag('event', 'conversion', {
-          'send_to': 'AW-11323462665/PP9PCNvv0NkcEImouZcq',
-          'value': 1.0,
-          'currency': 'INR'
-      });
-    </script>
-    <?php endif; ?>
     
     <!-- Google Fonts: Inter & Quicksand -->
     <link rel="preconnect" href="https://fonts.googleapis.com">

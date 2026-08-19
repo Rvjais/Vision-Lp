@@ -46,6 +46,15 @@ $page_description = "Wavelight Plus (InnovEyes) Ray Tracing laser eye surgery at
     </script>
     <!-- Service landing page visual layer -->
     <link rel="stylesheet" href="css/service-lp.css">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11323462665"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'AW-11323462665');
+    </script>
 </head>
 
 <body class="bg-cream font-sans text-slate-800 min-h-screen flex flex-col selection:bg-accent/20 selection:text-primary">
@@ -422,6 +431,13 @@ $page_description = "Wavelight Plus (InnovEyes) Ray Tracing laser eye surgery at
                         'Accept': 'application/json'
                     }
                 }).then(response => {
+                    if (typeof gtag === 'function') {
+                        gtag('event', 'conversion', {
+                            'send_to': 'AW-11323462665/PP9PCNvv0NkcEImouZcq',
+                            'value': 1.0,
+                            'currency': 'INR'
+                        });
+                    }
                     window.location.href = "thankyou.php?service=" + encodeURIComponent(formData.get('service') || '');
                 }).catch(error => {
                     console.error(error);
