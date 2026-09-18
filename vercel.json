@@ -14,6 +14,10 @@
       "use": "vercel-php@0.9.0"
     },
     {
+      "src": "landing-page/eye-treatment-in-delhi/*.php",
+      "use": "vercel-php@0.9.0"
+    },
+    {
       "src": "assets/**",
       "use": "@vercel/static"
     },
@@ -35,6 +39,20 @@
     }
   ],
   "routes": [
+    {
+      "src": "/landing-page/eye-treatment-in-delhi",
+      "status": 301,
+      "headers": { "Location": "/landing-page/eye-treatment-in-delhi/" }
+    },
+    {
+      "src": "/landing-page/?",
+      "status": 301,
+      "headers": { "Location": "/landing-page/eye-treatment-in-delhi/" }
+    },
+    {
+      "src": "/landing-page/eye-treatment-in-delhi/(.*)",
+      "dest": "/landing-page/eye-treatment-in-delhi/$1"
+    },
     {
       "src": "/assets/(.*)",
       "dest": "/assets/$1"
