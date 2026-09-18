@@ -1,16 +1,13 @@
-# Canonical slug for this landing page:
-#   /landing-page/eye-treatment-in-delhi/  ->  eye-treatment-in-delhi/index.php
+# This folder deploys to /landing-page/landing-page/ on the live server
+# (repo root itself is uploaded as /landing-page/). Forward everything here
+# to the canonical slug: /landing-page/eye-treatment-in-delhi/
 <IfModule mod_rewrite.c>
   RewriteEngine On
 
-  # /landing-page  (no trailing slash) -> canonical slug (keeps query string, e.g. UTMs)
-  RewriteRule ^$ eye-treatment-in-delhi/ [R=301,L,QSA]
+  # /landing-page/landing-page/ (this dir) -> canonical slug (keeps query string, e.g. UTMs)
+  RewriteRule ^$ /landing-page/eye-treatment-in-delhi/ [R=301,L,QSA]
 
-  # /landing-page/eye-treatment-in-delhi (no trailing slash) -> trailing-slash version
-  RewriteRule ^eye-treatment-in-delhi$ eye-treatment-in-delhi/ [R=301,L,QSA]
-</IfModule>
-
-# Never index the old folder URL; the PHP 301 already points it at the canonical slug.
-<IfModule mod_headers.c>
-  Header set X-Robots-Tag "noindex" env=OLD_LANDING_REDIRECT
+  # /landing-page/landing-page/eye-treatment-in-delhi or eye-tratment-in-delhi -> canonical slug
+  RewriteRule ^eye-tratment-in-delhi/?$ /landing-page/eye-treatment-in-delhi/ [R=301,L,QSA]
+  RewriteRule ^eye-treatment-in-delhi/?$ /landing-page/eye-treatment-in-delhi/ [R=301,L,QSA]
 </IfModule>

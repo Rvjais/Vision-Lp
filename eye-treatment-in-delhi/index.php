@@ -18,7 +18,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <title><?php echo $page_title; ?></title>
 <meta name="description" content="<?php echo $page_description; ?>">
 <link rel="canonical" href="<?php echo $canonical; ?>">
-<link rel="icon" type="image/svg+xml" href="../../favicon.svg" />
+<link rel="icon" type="image/svg+xml" href="../favicon.svg" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -65,8 +65,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- Header / Sticky CTA -->
 <header class="w-full bg-white/95 backdrop-blur-md border-b border-slate-100 sticky top-0 z-50 py-3">
 <div class="container mx-auto px-4 md:px-6 flex items-center justify-between gap-2">
-<a href="../../index.php" class="flex items-center gap-2 group min-w-0">
-<img src="../../assets/images/small-logo.png" alt="Vision Eye Centre Logo" class="h-9 md:h-12 w-auto object-contain flex-shrink-0">
+<a href="../index.php" class="flex items-center gap-2 group min-w-0">
+<img src="../assets/images/small-logo.png" alt="Vision Eye Centre Logo" class="h-9 md:h-12 w-auto object-contain flex-shrink-0">
 <div class="flex flex-col min-w-0">
 <span class="font-heading font-black text-primary text-base md:text-2xl tracking-tight leading-tight truncate">Vision Eye Centre</span>
 <small class="hidden sm:block text-[11px] text-slate-500 font-medium">Excellence … with a humane touch</small>
@@ -82,7 +82,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <main class="flex-grow">
 
 <!-- HERO + LEAD FORM -->
-<section class="relative pt-12 pb-14 md:pt-16 md:pb-20 overflow-hidden bg-cover bg-center" style="background-image:linear-gradient(to right,rgba(10,52,89,.93),rgba(15,76,129,.86)),url('../../assets/images/vision_eye_hero.png');">
+<section class="relative pt-12 pb-14 md:pt-16 md:pb-20 overflow-hidden bg-cover bg-center" style="background-image:linear-gradient(to right,rgba(10,52,89,.93),rgba(15,76,129,.86)),url('../assets/images/vision_eye_hero.png');">
 <div class="container mx-auto px-4 md:px-6 relative z-10">
 <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
 <div class="lg:col-span-7 space-y-5 text-white">
@@ -100,7 +100,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <span class="text-accent font-bold text-xs uppercase tracking-widest">Book Your Eye Consultation</span>
 <h3 class="text-2xl font-heading font-extrabold text-primary mt-1">Schedule Your Visit</h3>
 <p class="text-xs text-slate-500 mt-1 mb-4">Get a comprehensive evaluation from our experienced ophthalmology team and understand the right treatment option for your eye condition.</p>
-<form class="lead-form space-y-3.5" action="../../thankyou.php" method="POST">
+<form class="lead-form space-y-3.5" action="../thankyou.php" method="POST">
 <div class="space-y-1"><label class="text-xs font-bold text-slate-700 block">Full Name *</label><input type="text" name="first-name" required placeholder="Your full name" class="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-200 rounded-xl focus:border-accent outline-none text-sm"></div>
 <div class="space-y-1"><label class="text-xs font-bold text-slate-700 block">Phone Number *</label><input type="tel" name="phone" required placeholder="+91 Mobile number" pattern="[0-9+ ]{10,15}" class="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-200 rounded-xl focus:border-accent outline-none text-sm"></div>
 <div class="space-y-1"><label class="text-xs font-bold text-slate-700 block">Preferred Centre *</label><select name="location" required class="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-200 rounded-xl focus:border-accent outline-none text-sm cursor-pointer"><option value="" disabled selected>Select centre...</option><option value="Siri Fort Road">Siri Fort Road</option><option value="West Patel Nagar">West Patel Nagar</option></select></div>
@@ -184,7 +184,7 @@ echo '</div>';
 <div id="lead-form-mid" class="max-w-3xl mx-auto mt-14 bg-primary rounded-3xl p-6 sm:p-10 text-white shadow-2xl">
 <h3 class="text-2xl font-heading font-extrabold text-center">Not Sure Which Treatment You Need?</h3>
 <p class="text-sm text-sky-200 text-center mt-2 mb-6">Share your details — our ophthalmology team will guide you to the right specialist and treatment.</p>
-<form class="lead-form grid grid-cols-1 sm:grid-cols-2 gap-3" action="../../thankyou.php" method="POST">
+<form class="lead-form grid grid-cols-1 sm:grid-cols-2 gap-3" action="../thankyou.php" method="POST">
 <input type="text" name="first-name" required placeholder="Full Name *" class="px-4 py-3 rounded-xl text-slate-800 text-sm outline-none">
 <input type="tel" name="phone" required placeholder="Phone Number *" pattern="[0-9+ ]{10,15}" class="px-4 py-3 rounded-xl text-slate-800 text-sm outline-none">
 <select name="location" required class="px-4 py-3 rounded-xl text-slate-800 text-sm outline-none cursor-pointer"><option value="" disabled selected>Preferred Centre *</option><option>Siri Fort Road</option><option>West Patel Nagar</option></select>
@@ -222,7 +222,7 @@ echo '</div>';
 </div>
 <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
 <div class="bg-white p-8 rounded-3xl border border-slate-200 text-center shadow-sm">
-<img src="../../assets/images/chairman-dr-grover.webp" alt="Prof. (Dr) A. K. Grover" class="w-28 h-28 rounded-full object-cover border-4 border-gold mx-auto shadow-md">
+<img src="../assets/images/chairman-dr-grover.webp" alt="Prof. (Dr) A. K. Grover" class="w-28 h-28 rounded-full object-cover border-4 border-gold mx-auto shadow-md">
 <h4 class="font-bold text-primary text-lg mt-4">Prof. (Dr) A. K. Grover</h4>
 <p class="text-xs font-bold text-gold">Chairman – Vision Eye Centres</p>
 <p class="text-xs text-slate-500 mt-1">MD (AIIMS) • FRCS (Glasgow) • FAICO • FICO • FIMSA</p>
@@ -231,7 +231,7 @@ echo '</div>';
 <a href="#lead-form-doctors" class="mt-4 inline-flex px-5 py-2.5 bg-primary text-white text-xs font-bold rounded-full hover:bg-primary-dark">Book Consultation</a>
 </div>
 <div class="bg-white p-8 rounded-3xl border border-slate-200 text-center shadow-sm">
-<img src="../../assets/images/dr-tushar-grover.webp" alt="Dr. Tushar Grover" class="w-28 h-28 rounded-full object-cover border-4 border-teal mx-auto shadow-md">
+<img src="../assets/images/dr-tushar-grover.webp" alt="Dr. Tushar Grover" class="w-28 h-28 rounded-full object-cover border-4 border-teal mx-auto shadow-md">
 <h4 class="font-bold text-primary text-lg mt-4">Dr. Tushar Grover</h4>
 <p class="text-xs font-bold text-teal">Medical Director | Cornea & Refractive Specialist</p>
 <p class="text-xs text-slate-500 mt-1">MS – Aravind • FAICO Cornea & Refractive • Narayana Nethralaya • FICO Cornea</p>
@@ -239,7 +239,7 @@ echo '</div>';
 <a href="#lead-form-doctors" class="mt-4 inline-flex px-5 py-2.5 bg-teal text-white text-xs font-bold rounded-full hover:bg-teal-700">Consult Dr. Tushar Grover</a>
 </div>
 <div class="bg-white p-8 rounded-3xl border border-slate-200 text-center shadow-sm">
-<img src="../../assets/images/dr-apoorv-grover.webp" alt="Dr. Apoorv Grover" class="w-28 h-28 rounded-full object-cover border-4 border-accent mx-auto shadow-md">
+<img src="../assets/images/dr-apoorv-grover.webp" alt="Dr. Apoorv Grover" class="w-28 h-28 rounded-full object-cover border-4 border-accent mx-auto shadow-md">
 <h4 class="font-bold text-primary text-lg mt-4">Dr. Apoorv Grover</h4>
 <p class="text-xs font-bold text-accent">Medical Director | Vitreoretina & Uvea Specialist</p>
 <p class="text-xs text-slate-500 mt-1">DNB • MNAMS • FICO • Fellowship Vitreoretina & Uvea – Aravind</p>
@@ -250,7 +250,7 @@ echo '</div>';
 <div id="lead-form-doctors" class="max-w-3xl mx-auto mt-12 bg-white rounded-3xl border border-slate-200 p-6 sm:p-8 shadow-lg">
 <h3 class="text-xl font-heading font-extrabold text-primary text-center">Consult Our Specialist</h3>
 <p class="text-xs text-slate-500 text-center mt-1 mb-5">Book a consultation with the right doctor for your eye condition.</p>
-<form class="lead-form grid grid-cols-1 sm:grid-cols-2 gap-3" action="../../thankyou.php" method="POST">
+<form class="lead-form grid grid-cols-1 sm:grid-cols-2 gap-3" action="../thankyou.php" method="POST">
 <input type="text" name="first-name" required placeholder="Full Name *" class="px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-sm outline-none">
 <input type="tel" name="phone" required placeholder="Phone Number *" pattern="[0-9+ ]{10,15}" class="px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-sm outline-none">
 <select name="location" required class="px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-sm outline-none cursor-pointer"><option value="" disabled selected>Preferred Centre *</option><option>Siri Fort Road</option><option>West Patel Nagar</option></select>
@@ -370,7 +370,7 @@ echo '<div class="faq-item bg-white border border-slate-200 rounded-2xl overflow
 <div id="lead-form-faq" class="max-w-3xl mx-auto mt-12 bg-white rounded-3xl border border-slate-200 p-6 sm:p-8 shadow-lg">
 <h3 class="text-xl font-heading font-extrabold text-primary text-center">Still Have Questions? Book Your Eye Consultation</h3>
 <p class="text-xs text-slate-500 text-center mt-1 mb-5">Get evaluated by experienced ophthalmologists and receive a personalised treatment recommendation.</p>
-<form class="lead-form grid grid-cols-1 sm:grid-cols-2 gap-3" action="../../thankyou.php" method="POST">
+<form class="lead-form grid grid-cols-1 sm:grid-cols-2 gap-3" action="../thankyou.php" method="POST">
 <input type="text" name="first-name" required placeholder="Full Name *" class="px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-sm outline-none">
 <input type="tel" name="phone" required placeholder="Phone Number *" pattern="[0-9+ ]{10,15}" class="px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-sm outline-none">
 <select name="location" required class="px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-sm outline-none cursor-pointer"><option value="" disabled selected>Preferred Centre *</option><option>Siri Fort Road</option><option>West Patel Nagar</option></select>
@@ -414,7 +414,7 @@ echo '<div class="faq-item bg-white border border-slate-200 rounded-2xl overflow
 <div class="container mx-auto px-4 md:px-6">
 <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
 <div class="space-y-3"><h4 class="text-white font-bold text-lg">Vision Eye Centre</h4><p class="text-xs text-slate-400">Excellence with a humane touch.</p><p class="text-xs"><i class="fa-solid fa-award text-gold mr-1"></i> NABH Accredited Eye Care Centre</p></div>
-<div class="space-y-3"><h4 class="text-white font-bold">Quick Links</h4><ul class="space-y-2 text-xs"><li>About Us | Eye Treatments | Eye Surgery | Doctors | Technology | FAQs | Contact Us</li><li><a href="../../index.php" class="hover:text-accent">Home</a></li><li><a href="../../privacy-policy.php" class="hover:text-accent">Privacy Policy</a></li></ul></div>
+<div class="space-y-3"><h4 class="text-white font-bold">Quick Links</h4><ul class="space-y-2 text-xs"><li>About Us | Eye Treatments | Eye Surgery | Doctors | Technology | FAQs | Contact Us</li><li><a href="../index.php" class="hover:text-accent">Home</a></li><li><a href="../privacy-policy.php" class="hover:text-accent">Privacy Policy</a></li></ul></div>
 <div class="space-y-3"><h4 class="text-white font-bold">Our Locations</h4><ul class="space-y-2 text-xs"><li><strong class="text-white">South Delhi:</strong> 19, Siri Fort Road, New Delhi – 110049</li><li><strong class="text-white">West Delhi:</strong> 12/27, West Patel Nagar, New Delhi – 110008</li></ul></div>
 <div class="space-y-3"><h4 class="text-white font-bold">Contact Us</h4><ul class="space-y-2 text-xs"><li><i class="fa-solid fa-phone text-accent"></i> <a href="tel:+919711004422">+91 9711004422</a></li><li><i class="fa-solid fa-envelope text-accent"></i> <a href="mailto:visioneyecentrehr@gmail.com">visioneyecentrehr@gmail.com</a></li></ul></div>
 </div>
@@ -450,8 +450,8 @@ const btn=form.querySelector('button[type="submit"]');
 const orig=btn.innerHTML; btn.innerHTML='<i class="fa-solid fa-spinner fa-spin"></i> Submitting...'; btn.disabled=true;
 const fd=new FormData(form);
 fetch('https://app.formester.com/forms/LRTn5uhum/submissions.json',{method:'POST',body:fd,headers:{'Accept':'application/json'}})
-.then(()=>{if(typeof gtag==='function'){gtag('event','conversion',{'send_to':'AW-11323462665/PP9PCNvv0NkcEImouZcq','value':1.0,'currency':'INR'});}window.location.href="../../thankyou.php";})
-.catch(()=>{window.location.href="../../thankyou.php";});
+.then(()=>{if(typeof gtag==='function'){gtag('event','conversion',{'send_to':'AW-11323462665/PP9PCNvv0NkcEImouZcq','value':1.0,'currency':'INR'});}window.location.href="../thankyou.php";})
+.catch(()=>{window.location.href="../thankyou.php";});
 });
 });
 </script>
