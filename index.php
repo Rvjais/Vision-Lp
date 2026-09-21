@@ -1,4 +1,6 @@
 <?php
+// Formester form that receives this page's leads (the code after /forms/ in the Formester URL).
+$formester_form_id = 'LRTn5uhum'; // TODO: replace with this page's own form: "LP - Home (Best Eye Hospital in Delhi)"
 $page_title = "Best Eye Hospital in Delhi | Vision Eye Centre - Excellence with a Humane Touch";
 $page_description = "Vision Eye Centre is NABH accredited & trusted as the best eye hospital in Delhi. Specialist doctors for Contoura Vision, Wavelight Plus, Smile Eye, Cataract Surgery & LASIK.";
 ?>
@@ -117,13 +119,13 @@ $page_description = "Vision Eye Centre is NABH accredited & trusted as the best 
 
                         <!-- Quick Links to 3 Featured Services -->
                         <div class="flex flex-wrap gap-3 pt-2">
-                            <a href="contoura-vision.php" class="px-4 py-2 bg-white/15 hover:bg-white/25 border border-white/30 rounded-xl text-xs md:text-sm font-bold text-sky-200 hover:text-white transition-all flex items-center gap-2">
+                            <a href="contoura-vision-surgery-in-delhi/" class="px-4 py-2 bg-white/15 hover:bg-white/25 border border-white/30 rounded-xl text-xs md:text-sm font-bold text-sky-200 hover:text-white transition-all flex items-center gap-2">
                                 <i class="fa-solid fa-eye text-accent"></i> Contoura Vision <i class="fa-solid fa-arrow-right text-[10px]"></i>
                             </a>
-                            <a href="wavelight-plus.php" class="px-4 py-2 bg-white/15 hover:bg-white/25 border border-white/30 rounded-xl text-xs md:text-sm font-bold text-amber-200 hover:text-white transition-all flex items-center gap-2">
+                            <a href="wavelight-plus-treatment-in-delhi/" class="px-4 py-2 bg-white/15 hover:bg-white/25 border border-white/30 rounded-xl text-xs md:text-sm font-bold text-amber-200 hover:text-white transition-all flex items-center gap-2">
                                 <i class="fa-solid fa-wand-magic-sparkles text-gold"></i> Wavelight Plus <i class="fa-solid fa-arrow-right text-[10px]"></i>
                             </a>
-                            <a href="smile-eye.php" class="px-4 py-2 bg-white/15 hover:bg-white/25 border border-white/30 rounded-xl text-xs md:text-sm font-bold text-emerald-200 hover:text-white transition-all flex items-center gap-2">
+                            <a href="smile-pro-eye-surgery-in-delhi/" class="px-4 py-2 bg-white/15 hover:bg-white/25 border border-white/30 rounded-xl text-xs md:text-sm font-bold text-emerald-200 hover:text-white transition-all flex items-center gap-2">
                                 <i class="fa-solid fa-face-smile text-emerald-300"></i> SMILE Pro Eye <i class="fa-solid fa-arrow-right text-[10px]"></i>
                             </a>
                         </div>
@@ -231,7 +233,7 @@ $page_description = "Vision Eye Centre is NABH accredited & trusted as the best 
                             </div>
                         </div>
                         <div class="p-6 pt-0">
-                            <a href="contoura-vision.php" class="inline-flex items-center justify-between w-full px-5 py-3 bg-primary hover:bg-primary-dark text-white font-bold rounded-2xl text-xs transition-all shadow-md">
+                            <a href="contoura-vision-surgery-in-delhi/" class="inline-flex items-center justify-between w-full px-5 py-3 bg-primary hover:bg-primary-dark text-white font-bold rounded-2xl text-xs transition-all shadow-md">
                                 <span>Explore Contoura Vision Page</span> <i class="fa-solid fa-arrow-right"></i>
                             </a>
                         </div>
@@ -252,7 +254,7 @@ $page_description = "Vision Eye Centre is NABH accredited & trusted as the best 
                             </div>
                         </div>
                         <div class="p-6 pt-0">
-                            <a href="wavelight-plus.php" class="inline-flex items-center justify-between w-full px-5 py-3 bg-accent hover:bg-sky-600 text-white font-bold rounded-2xl text-xs transition-all shadow-md">
+                            <a href="wavelight-plus-treatment-in-delhi/" class="inline-flex items-center justify-between w-full px-5 py-3 bg-accent hover:bg-sky-600 text-white font-bold rounded-2xl text-xs transition-all shadow-md">
                                 <span>Explore Wavelight Plus Page</span> <i class="fa-solid fa-arrow-right"></i>
                             </a>
                         </div>
@@ -273,7 +275,7 @@ $page_description = "Vision Eye Centre is NABH accredited & trusted as the best 
                             </div>
                         </div>
                         <div class="p-6 pt-0">
-                            <a href="smile-eye.php" class="inline-flex items-center justify-between w-full px-5 py-3 bg-teal hover:bg-teal-700 text-white font-bold rounded-2xl text-xs transition-all shadow-md">
+                            <a href="smile-pro-eye-surgery-in-delhi/" class="inline-flex items-center justify-between w-full px-5 py-3 bg-teal hover:bg-teal-700 text-white font-bold rounded-2xl text-xs transition-all shadow-md">
                                 <span>Explore SMILE Pro Page</span> <i class="fa-solid fa-arrow-right"></i>
                             </a>
                         </div>
@@ -401,9 +403,9 @@ $page_description = "Vision Eye Centre is NABH accredited & trusted as the best 
                     <h4 class="text-white font-bold text-lg">Quick Links</h4>
                     <ul class="space-y-2 text-xs">
                         <li><a href="index.php" class="hover:text-accent transition-colors">Home</a></li>
-                        <li><a href="contoura-vision.php" class="hover:text-accent transition-colors">Contoura Vision</a></li>
-                        <li><a href="wavelight-plus.php" class="hover:text-accent transition-colors">Wavelight Plus</a></li>
-                        <li><a href="smile-eye.php" class="hover:text-accent transition-colors">SMILE Pro Eye</a></li>
+                        <li><a href="contoura-vision-surgery-in-delhi/" class="hover:text-accent transition-colors">Contoura Vision</a></li>
+                        <li><a href="wavelight-plus-treatment-in-delhi/" class="hover:text-accent transition-colors">Wavelight Plus</a></li>
+                        <li><a href="smile-pro-eye-surgery-in-delhi/" class="hover:text-accent transition-colors">SMILE Pro Eye</a></li>
                         <li><a href="privacy-policy.php" class="hover:text-accent transition-colors">Privacy Policy</a></li>
                     </ul>
                 </div>
@@ -446,7 +448,7 @@ $page_description = "Vision Eye Centre is NABH accredited & trusted as the best 
                 submitBtn.disabled = true;
 
                 const formData = new FormData(form);
-                fetch('https://app.formester.com/forms/LRTn5uhum/submissions.json', {
+                fetch('https://app.formester.com/forms/<?php echo $formester_form_id; ?>/submissions.json', {
                     method: 'POST',
                     body: formData,
                     headers: {

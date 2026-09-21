@@ -1,0 +1,26 @@
+# Old URLs -> current landing page slugs (301, query string e.g. UTMs / gclid is kept).
+# Works wherever this folder is mounted (live: /landing-page/).
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # Old .php page URLs
+  RewriteCond %{REQUEST_URI} ^(.*/)contoura-vision\.php$
+  RewriteRule ^contoura-vision\.php$ %1contoura-vision-surgery-in-delhi/ [R=301,L]
+  RewriteCond %{REQUEST_URI} ^(.*/)smile-eye\.php$
+  RewriteRule ^smile-eye\.php$ %1smile-pro-eye-surgery-in-delhi/ [R=301,L]
+  RewriteCond %{REQUEST_URI} ^(.*/)wavelight-plus\.php$
+  RewriteRule ^wavelight-plus\.php$ %1wavelight-plus-treatment-in-delhi/ [R=301,L]
+
+  # Misspelled slug + old /landing-page/landing-page/ location of the eye treatment page
+  RewriteCond %{REQUEST_URI} ^(.*/)eye-tratment-in-delhi/?$
+  RewriteRule ^eye-tratment-in-delhi/?$ %1eye-treatment-in-delhi/ [R=301,L]
+  RewriteCond %{REQUEST_URI} ^(.*/)landing-page(/.*)?$
+  RewriteRule ^landing-page(/.*)?$ %1eye-treatment-in-delhi/ [R=301,L]
+
+  # Landing pages live in pages/<slug>/ but are served at the clean URL /<slug>/
+  # 1) add the missing trailing slash
+  RewriteCond %{REQUEST_URI} ^(.*/)([a-z0-9-]+-in-delhi)$
+  RewriteRule ^[a-z0-9-]+-in-delhi$ %1%2/ [R=301,L]
+  # 2) serve the page from pages/ without changing the URL
+  RewriteRule ^([a-z0-9-]+-in-delhi)/(.*)$ pages/$1/$2 [L]
+</IfModule>

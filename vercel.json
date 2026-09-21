@@ -1,77 +1,21 @@
 {
   "version": 2,
   "builds": [
-    {
-      "src": "*.php",
-      "use": "vercel-php@0.9.0"
-    },
-    {
-      "src": "landing/*.php",
-      "use": "vercel-php@0.9.0"
-    },
-    {
-      "src": "landing-page/*.php",
-      "use": "vercel-php@0.9.0"
-    },
-    {
-      "src": "eye-treatment-in-delhi/*.php",
-      "use": "vercel-php@0.9.0"
-    },
-    {
-      "src": "eye-tratment-in-delhi/*.php",
-      "use": "vercel-php@0.9.0"
-    },
-    {
-      "src": "assets/**",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "landing/assets/**",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "css/**",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "js/**",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "favicon.svg",
-      "use": "@vercel/static"
-    }
+    { "src": "*.php", "use": "vercel-php@0.9.0" },
+    { "src": "pages/*/index.php", "use": "vercel-php@0.9.0" },
+    { "src": "assets/**", "use": "@vercel/static" },
+    { "src": "css/**", "use": "@vercel/static" },
+    { "src": "favicon.svg", "use": "@vercel/static" }
   ],
   "routes": [
-    {
-      "src": "/landing-page/eye-treatment-in-delhi/?",
-      "dest": "/eye-treatment-in-delhi/index.php"
-    },
-    {
-      "src": "/landing-page/eye-tratment-in-delhi/?",
-      "status": 301,
-      "headers": { "Location": "/landing-page/eye-treatment-in-delhi/" }
-    },
-    {
-      "src": "/landing-page/?",
-      "status": 301,
-      "headers": { "Location": "/landing-page/eye-treatment-in-delhi/" }
-    },
-    {
-      "src": "/landing-page/eye-treatment-in-delhi/(.*)",
-      "dest": "/eye-treatment-in-delhi/$1"
-    },
-    {
-      "src": "/assets/(.*)",
-      "dest": "/assets/$1"
-    },
-    {
-      "src": "/landing/assets/(.*)",
-      "dest": "/landing/assets/$1"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/$1"
-    }
+    { "src": "/(?:landing-page/)?contoura-vision\\.php", "status": 301, "headers": { "Location": "/landing-page/contoura-vision-surgery-in-delhi/" } },
+    { "src": "/(?:landing-page/)?smile-eye\\.php", "status": 301, "headers": { "Location": "/landing-page/smile-pro-eye-surgery-in-delhi/" } },
+    { "src": "/(?:landing-page/)?wavelight-plus\\.php", "status": 301, "headers": { "Location": "/landing-page/wavelight-plus-treatment-in-delhi/" } },
+    { "src": "/landing-page/eye-tratment-in-delhi/?", "status": 301, "headers": { "Location": "/landing-page/eye-treatment-in-delhi/" } },
+    { "src": "/landing-page/?", "status": 301, "headers": { "Location": "/landing-page/eye-treatment-in-delhi/" } },
+    { "src": "/landing-page/([a-z0-9-]+-in-delhi)/?", "dest": "/pages/$1/index.php" },
+    { "src": "/landing-page/(.*)", "dest": "/$1" },
+    { "src": "/([a-z0-9-]+-in-delhi)/?", "dest": "/pages/$1/index.php" },
+    { "src": "/(.*)", "dest": "/$1" }
   ]
 }
