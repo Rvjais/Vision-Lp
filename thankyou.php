@@ -120,9 +120,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <h4 class="text-white font-bold text-lg">Quick Links</h4>
                     <ul class="space-y-2 text-xs">
                         <li><a href="index.php" class="hover:text-accent transition-colors">Home</a></li>
-                        <li><a href="contoura-vision-surgery-in-delhi/" class="hover:text-accent transition-colors">Contoura Vision</a></li>
-                        <li><a href="wavelight-plus-treatment-in-delhi/" class="hover:text-accent transition-colors">Wavelight Plus</a></li>
-                        <li><a href="smile-pro-eye-surgery-in-delhi/" class="hover:text-accent transition-colors">SMILE Pro Eye</a></li>
+                        <li><a href="cataract-surgery-in-delhi/" class="hover:text-accent transition-colors">Cataract Surgery</a></li>
+                        <li><a href="eye-treatment-in-delhi/" class="hover:text-accent transition-colors">Eye Treatment</a></li>
+                        <li><a href="lasik-surgery-in-delhi/" class="hover:text-accent transition-colors">LASIK Surgery</a></li>
                         <li><a href="privacy-policy.php" class="hover:text-accent transition-colors">Privacy Policy</a></li>
                     </ul>
                 </div>

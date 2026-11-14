@@ -139,14 +139,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                         <!-- Quick Links to 3 Featured Services -->
                         <div class="flex flex-wrap gap-3 pt-2">
-                            <a href="contoura-vision-surgery-in-delhi/" class="px-4 py-2 bg-white/15 hover:bg-white/25 border border-white/30 rounded-xl text-xs md:text-sm font-bold text-sky-200 hover:text-white transition-all flex items-center gap-2">
-                                <i class="fa-solid fa-eye text-accent"></i> Contoura Vision <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                            <a href="cataract-surgery-in-delhi/" class="px-4 py-2 bg-white/15 hover:bg-white/25 border border-white/30 rounded-xl text-xs md:text-sm font-bold text-sky-200 hover:text-white transition-all flex items-center gap-2">
+                                <i class="fa-solid fa-eye text-accent"></i> Cataract Surgery <i class="fa-solid fa-arrow-right text-[10px]"></i>
                             </a>
-                            <a href="wavelight-plus-treatment-in-delhi/" class="px-4 py-2 bg-white/15 hover:bg-white/25 border border-white/30 rounded-xl text-xs md:text-sm font-bold text-amber-200 hover:text-white transition-all flex items-center gap-2">
-                                <i class="fa-solid fa-wand-magic-sparkles text-gold"></i> Wavelight Plus <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                            <a href="eye-treatment-in-delhi/" class="px-4 py-2 bg-white/15 hover:bg-white/25 border border-white/30 rounded-xl text-xs md:text-sm font-bold text-amber-200 hover:text-white transition-all flex items-center gap-2">
+                                <i class="fa-solid fa-stethoscope text-gold"></i> Eye Treatment <i class="fa-solid fa-arrow-right text-[10px]"></i>
                             </a>
-                            <a href="smile-pro-eye-surgery-in-delhi/" class="px-4 py-2 bg-white/15 hover:bg-white/25 border border-white/30 rounded-xl text-xs md:text-sm font-bold text-emerald-200 hover:text-white transition-all flex items-center gap-2">
-                                <i class="fa-solid fa-face-smile text-emerald-300"></i> SMILE Pro Eye <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                            <a href="lasik-surgery-in-delhi/" class="px-4 py-2 bg-white/15 hover:bg-white/25 border border-white/30 rounded-xl text-xs md:text-sm font-bold text-emerald-200 hover:text-white transition-all flex items-center gap-2">
+                                <i class="fa-solid fa-wand-magic-sparkles text-emerald-300"></i> LASIK Surgery <i class="fa-solid fa-arrow-right text-[10px]"></i>
                             </a>
                         </div>
                     </div>
@@ -225,78 +225,79 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
         </section>
 
-        <!-- 3 Dedicated Laser Vision Services Showcase Cards -->
+        <!-- 3 Dedicated Service Showcase Cards -->
         <section id="services" class="py-12 md:py-16 bg-white border-b border-slate-100">
             <div class="container mx-auto px-4 md:px-6">
                 <div class="text-center max-w-2xl mx-auto mb-12">
-                    <span class="text-accent font-bold tracking-widest uppercase text-xs">Advanced Refractive Laser Suite</span>
-                    <h2 class="text-3xl md:text-5xl font-heading font-black text-primary mt-2">Specialized Laser Eye Services</h2>
+                    <span class="text-accent font-bold tracking-widest uppercase text-xs">Our Eye Care Services</span>
+                    <h2 class="text-3xl md:text-5xl font-heading font-black text-primary mt-2">Specialised Eye Care Services</h2>
                     <p class="text-sm md:text-base text-slate-600 font-medium mt-3">
-                        Choose your personalized spectacle freedom treatment. Click any service page below to learn more.
+                        Explore our dedicated service pages below to understand your treatment options.
                     </p>
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-                    
-                    <!-- Card 1: Contoura Vision -->
+
+                    <!-- Card 1: Cataract Surgery -->
+                    <!-- NOTE: No cataract-specific image exists yet in assets/images; swap vision_eye_hero.png when one is available. -->
                     <div class="group bg-slate-50 border border-slate-200 rounded-3xl overflow-hidden hover:shadow-2xl transition-all duration-300 flex flex-col justify-between">
                         <div>
                             <div class="h-48 w-full overflow-hidden relative">
-                                <img src="assets/images/contoura_vision.png" alt="Contoura Vision Surgery" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                                <span class="absolute top-3 right-3 bg-primary text-white text-xs font-bold px-3 py-1 rounded-full">Topography Guided</span>
+                                <img src="assets/images/vision_eye_hero.png" alt="Cataract Surgery" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                <span class="absolute top-3 right-3 bg-primary text-white text-xs font-bold px-3 py-1 rounded-full">Phaco & IOL Options</span>
                             </div>
                             <div class="p-6 space-y-3">
-                                <h3 class="text-xl font-black text-primary group-hover:text-accent transition-colors">Contoura Vision</h3>
+                                <h3 class="text-xl font-black text-primary group-hover:text-accent transition-colors">Cataract Surgery</h3>
                                 <p class="text-xs text-slate-600 leading-relaxed font-medium">
-                                    22,000 corneal elevation points mapped for custom topography-guided laser vision correction beyond 6/6 clarity.
+                                    Comprehensive cataract evaluation, phacoemulsification and micro-incision surgery, with monofocal, multifocal, EDOF and toric lens options.
                                 </p>
                             </div>
                         </div>
                         <div class="p-6 pt-0">
-                            <a href="contoura-vision-surgery-in-delhi/" class="inline-flex items-center justify-between w-full px-5 py-3 bg-primary hover:bg-primary-dark text-white font-bold rounded-2xl text-xs transition-all shadow-md">
-                                <span>Explore Contoura Vision Page</span> <i class="fa-solid fa-arrow-right"></i>
+                            <a href="cataract-surgery-in-delhi/" class="inline-flex items-center justify-between w-full px-5 py-3 bg-primary hover:bg-primary-dark text-white font-bold rounded-2xl text-xs transition-all shadow-md">
+                                <span>Explore Cataract Surgery Page</span> <i class="fa-solid fa-arrow-right"></i>
                             </a>
                         </div>
                     </div>
 
-                    <!-- Card 2: Wavelight Plus -->
+                    <!-- Card 2: Eye Treatment -->
                     <div class="group bg-slate-50 border border-slate-200 rounded-3xl overflow-hidden hover:shadow-2xl transition-all duration-300 flex flex-col justify-between">
                         <div>
                             <div class="h-48 w-full overflow-hidden relative">
-                                <img src="assets/images/wavelight_plus.png" alt="Wavelight Plus Treatment" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                                <span class="absolute top-3 right-3 bg-amber-500 text-slate-900 text-xs font-bold px-3 py-1 rounded-full">AI Ray Tracing</span>
+                                <img src="assets/images/vision_eye_hero.png" alt="Eye Treatment at Vision Eye Centre" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                <span class="absolute top-3 right-3 bg-amber-500 text-slate-900 text-xs font-bold px-3 py-1 rounded-full">Comprehensive Care</span>
                             </div>
                             <div class="p-6 space-y-3">
-                                <h3 class="text-xl font-black text-primary group-hover:text-accent transition-colors">Wavelight Plus (InnovEyes)</h3>
+                                <h3 class="text-xl font-black text-primary group-hover:text-accent transition-colors">Eye Treatment</h3>
                                 <p class="text-xs text-slate-600 leading-relaxed font-medium">
-                                    Creates an AI-guided 3D "Digital Twin" of your eye for sub-micron laser precision and flawless night vision.
+                                    Specialist-led eye care across cornea, retina, glaucoma, cataract and paediatric ophthalmology at our NABH accredited centres.
                                 </p>
                             </div>
                         </div>
                         <div class="p-6 pt-0">
-                            <a href="wavelight-plus-treatment-in-delhi/" class="inline-flex items-center justify-between w-full px-5 py-3 bg-accent hover:bg-sky-600 text-white font-bold rounded-2xl text-xs transition-all shadow-md">
-                                <span>Explore Wavelight Plus Page</span> <i class="fa-solid fa-arrow-right"></i>
+                            <a href="eye-treatment-in-delhi/" class="inline-flex items-center justify-between w-full px-5 py-3 bg-accent hover:bg-sky-600 text-white font-bold rounded-2xl text-xs transition-all shadow-md">
+                                <span>Explore Eye Treatment Page</span> <i class="fa-solid fa-arrow-right"></i>
                             </a>
                         </div>
                     </div>
 
-                    <!-- Card 3: Smile Pro Eye -->
+                    <!-- Card 3: LASIK Surgery -->
                     <div class="group bg-slate-50 border border-slate-200 rounded-3xl overflow-hidden hover:shadow-2xl transition-all duration-300 flex flex-col justify-between">
                         <div>
                             <div class="h-48 w-full overflow-hidden relative">
-                                <img src="assets/images/smile_pro_eye.png" alt="SMILE Pro Eye Surgery" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                                <span class="absolute top-3 right-3 bg-teal text-white text-xs font-bold px-3 py-1 rounded-full">9-Sec Flapless</span>
+                                <img src="assets/images/lasik_surgery.png" alt="LASIK Eye Surgery" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                <span class="absolute top-3 right-3 bg-teal text-white text-xs font-bold px-3 py-1 rounded-full">Laser Vision Correction</span>
                             </div>
                             <div class="p-6 space-y-3">
-                                <h3 class="text-xl font-black text-primary group-hover:text-accent transition-colors">SMILE Pro Eye Surgery</h3>
+                                <h3 class="text-xl font-black text-primary group-hover:text-accent transition-colors">LASIK Surgery</h3>
                                 <p class="text-xs text-slate-600 leading-relaxed font-medium">
-                                    9-second ultra-fast VisuMax 800 laser keyhole procedure with zero flap creation and no dry eye risk.
+                                    LASIK, iLASIK, Contoura Vision, SMILE Pro and ICL options, recommended after a detailed eligibility evaluation by cornea and refractive specialists.
                                 </p>
                             </div>
                         </div>
                         <div class="p-6 pt-0">
-                            <a href="smile-pro-eye-surgery-in-delhi/" class="inline-flex items-center justify-between w-full px-5 py-3 bg-teal hover:bg-teal-700 text-white font-bold rounded-2xl text-xs transition-all shadow-md">
-                                <span>Explore SMILE Pro Page</span> <i class="fa-solid fa-arrow-right"></i>
+                            <a href="lasik-surgery-in-delhi/" class="inline-flex items-center justify-between w-full px-5 py-3 bg-teal hover:bg-teal-700 text-white font-bold rounded-2xl text-xs transition-all shadow-md">
+                                <span>Explore LASIK Surgery Page</span> <i class="fa-solid fa-arrow-right"></i>
                             </a>
                         </div>
                     </div>
@@ -423,9 +424,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <h4 class="text-white font-bold text-lg">Quick Links</h4>
                     <ul class="space-y-2 text-xs">
                         <li><a href="index.php" class="hover:text-accent transition-colors">Home</a></li>
-                        <li><a href="contoura-vision-surgery-in-delhi/" class="hover:text-accent transition-colors">Contoura Vision</a></li>
-                        <li><a href="wavelight-plus-treatment-in-delhi/" class="hover:text-accent transition-colors">Wavelight Plus</a></li>
-                        <li><a href="smile-pro-eye-surgery-in-delhi/" class="hover:text-accent transition-colors">SMILE Pro Eye</a></li>
+                        <li><a href="cataract-surgery-in-delhi/" class="hover:text-accent transition-colors">Cataract Surgery</a></li>
+                        <li><a href="eye-treatment-in-delhi/" class="hover:text-accent transition-colors">Eye Treatment</a></li>
+                        <li><a href="lasik-surgery-in-delhi/" class="hover:text-accent transition-colors">LASIK Surgery</a></li>
                         <li><a href="privacy-policy.php" class="hover:text-accent transition-colors">Privacy Policy</a></li>
                     </ul>
                 </div>

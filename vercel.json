@@ -8,9 +8,8 @@
     { "src": "favicon.svg", "use": "@vercel/static" }
   ],
   "routes": [
-    { "src": "/(?:landing-page/)?contoura-vision\\.php", "status": 301, "headers": { "Location": "/landing-page/contoura-vision-surgery-in-delhi/" } },
-    { "src": "/(?:landing-page/)?smile-eye\\.php", "status": 301, "headers": { "Location": "/landing-page/smile-pro-eye-surgery-in-delhi/" } },
-    { "src": "/(?:landing-page/)?wavelight-plus\\.php", "status": 301, "headers": { "Location": "/landing-page/wavelight-plus-treatment-in-delhi/" } },
+    { "src": "/(?:landing-page/)?(?:contoura-vision|smile-eye|wavelight-plus)\\.php", "status": 301, "headers": { "Location": "/landing-page/eye-treatment-in-delhi/" } },
+    { "src": "/(?:landing-page/)?(?:contoura-vision-surgery-in-delhi|smile-pro-eye-surgery-in-delhi|wavelight-plus-treatment-in-delhi)/?", "status": 301, "headers": { "Location": "/landing-page/eye-treatment-in-delhi/" } },
     { "src": "/landing-page/eye-tratment-in-delhi/?", "status": 301, "headers": { "Location": "/landing-page/eye-treatment-in-delhi/" } },
     { "src": "/landing-page/?", "status": 301, "headers": { "Location": "/landing-page/eye-treatment-in-delhi/" } },
     { "src": "/landing-page/([a-z0-9-]+-in-delhi)/?", "dest": "/pages/$1/index.php" },

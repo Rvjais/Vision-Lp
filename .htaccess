@@ -3,13 +3,11 @@
 <IfModule mod_rewrite.c>
   RewriteEngine On
 
-  # Old .php page URLs
-  RewriteCond %{REQUEST_URI} ^(.*/)contoura-vision\.php$
-  RewriteRule ^contoura-vision\.php$ %1contoura-vision-surgery-in-delhi/ [R=301,L]
-  RewriteCond %{REQUEST_URI} ^(.*/)smile-eye\.php$
-  RewriteRule ^smile-eye\.php$ %1smile-pro-eye-surgery-in-delhi/ [R=301,L]
-  RewriteCond %{REQUEST_URI} ^(.*/)wavelight-plus\.php$
-  RewriteRule ^wavelight-plus\.php$ %1wavelight-plus-treatment-in-delhi/ [R=301,L]
+  # Old .php page URLs and retired landing pages (Contoura, SMILE Pro, Wavelight Plus) -> Eye Treatment page
+  RewriteCond %{REQUEST_URI} ^(.*/)(contoura-vision|smile-eye|wavelight-plus)\.php$
+  RewriteRule ^(contoura-vision|smile-eye|wavelight-plus)\.php$ %1eye-treatment-in-delhi/ [R=301,L]
+  RewriteCond %{REQUEST_URI} ^(.*/)(contoura-vision-surgery-in-delhi|smile-pro-eye-surgery-in-delhi|wavelight-plus-treatment-in-delhi)/?$
+  RewriteRule ^(contoura-vision-surgery-in-delhi|smile-pro-eye-surgery-in-delhi|wavelight-plus-treatment-in-delhi)/?$ %1eye-treatment-in-delhi/ [R=301,L]
 
   # Misspelled slug + old /landing-page/landing-page/ location of the eye treatment page
   RewriteCond %{REQUEST_URI} ^(.*/)eye-tratment-in-delhi/?$
