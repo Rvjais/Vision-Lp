@@ -58,14 +58,24 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 extend: {
                     colors: {
                         primary: '#0F4C81',
+                        'primary-dark': '#0A3459',
                         accent: '#0284C7',
+                        teal: '#0D9488',
+                        gold: '#D97706',
+                        'gold-light': '#FEF3C7',
+                        cream: '#F8FAFC',
+                        'soft-blue': '#F0F9FF',
+                    },
+                    fontFamily: {
+                        sans: ['Quicksand', 'Inter', 'sans-serif'],
+                        heading: ['Inter', 'sans-serif'],
                     }
                 }
             }
         }
     </script>
 </head>
-<body class="min-h-screen bg-slate-50 text-slate-800 flex flex-col font-sans">
+<body class="min-h-screen bg-cream text-slate-800 flex flex-col font-sans">
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WSF4CVTL"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
