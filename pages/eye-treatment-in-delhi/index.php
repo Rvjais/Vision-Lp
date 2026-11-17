@@ -477,8 +477,8 @@ const btn=form.querySelector('button[type="submit"]');
 const orig=btn.innerHTML; btn.innerHTML='<i class="fa-solid fa-spinner fa-spin"></i> Submitting...'; btn.disabled=true;
 const fd=new FormData(form);
 fetch('https://app.formester.com/forms/<?php echo $formester_form_id; ?>/submissions.json',{method:'POST',body:fd,headers:{'Accept':'application/json'}})
-.then(()=>{if(typeof gtag==='function'){gtag('event','conversion',{'send_to':'AW-11323462665/PP9PCNvv0NkcEImouZcq','value':1.0,'currency':'INR'});}window.location.href="<?php echo $base; ?>thankyou.php";})
-.catch(()=>{window.location.href="<?php echo $base; ?>thankyou.php";});
+.then(async r=>{if(r.ok){console.info('Formester accepted the submission (HTTP '+r.status+')');}else{console.error('Formester rejected the submission: HTTP '+r.status, await r.text().catch(()=>''));}if(typeof gtag==='function'){gtag('event','conversion',{'send_to':'AW-11323462665/PP9PCNvv0NkcEImouZcq','value':1.0,'currency':'INR'});}window.location.href="<?php echo $base; ?>thankyou.php";})
+.catch(err=>{console.error('Formester request failed (network or CORS):',err);window.location.href="<?php echo $base; ?>thankyou.php";});
 });
 });
 </script>
