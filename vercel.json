@@ -2,19 +2,18 @@
   "version": 2,
   "builds": [
     { "src": "*.php", "use": "vercel-php@0.9.0" },
+    { "src": "*/index.php", "use": "vercel-php@0.9.0" },
     { "src": "pages/*/index.php", "use": "vercel-php@0.9.0" },
     { "src": "assets/**", "use": "@vercel/static" },
     { "src": "css/**", "use": "@vercel/static" },
     { "src": "favicon.svg", "use": "@vercel/static" }
   ],
   "routes": [
-    { "src": "/(?:landing-page/)?(?:contoura-vision|smile-eye|wavelight-plus)\\.php", "status": 301, "headers": { "Location": "/landing-page/eye-treatment-in-delhi/" } },
-    { "src": "/(?:landing-page/)?(?:contoura-vision-surgery-in-delhi|smile-pro-eye-surgery-in-delhi|wavelight-plus-treatment-in-delhi)/?", "status": 301, "headers": { "Location": "/landing-page/eye-treatment-in-delhi/" } },
-    { "src": "/landing-page/eye-tratment-in-delhi/?", "status": 301, "headers": { "Location": "/landing-page/eye-treatment-in-delhi/" } },
-    { "src": "/landing-page/?", "status": 301, "headers": { "Location": "/landing-page/eye-treatment-in-delhi/" } },
-    { "src": "/landing-page/([a-z0-9-]+-in-delhi)/?", "dest": "/pages/$1/index.php" },
-    { "src": "/landing-page/(.*)", "dest": "/$1" },
-    { "src": "/([a-z0-9-]+-in-delhi)/?", "dest": "/pages/$1/index.php" },
+    { "src": "/landing-page(?:/(.*))?", "status": 301, "headers": { "Location": "/$1" } },
+    { "src": "/(?:contoura-vision|smile-eye|wavelight-plus)\\.php", "status": 301, "headers": { "Location": "/eye-treatment-in-delhi/" } },
+    { "src": "/(?:contoura-vision-surgery-in-delhi|smile-pro-eye-surgery-in-delhi|wavelight-plus-treatment-in-delhi|eye-tratment-in-delhi)/?", "status": 301, "headers": { "Location": "/eye-treatment-in-delhi/" } },
+    { "src": "/pages/([a-z0-9-]+)/?", "dest": "/pages/$1/index.php" },
+    { "src": "/([a-z0-9-]+)/?", "dest": "/$1/index.php" },
     { "src": "/(.*)", "dest": "/$1" }
   ]
 }

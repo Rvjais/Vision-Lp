@@ -1,4 +1,5 @@
 <?php
+require __DIR__ . '/config.php';
 // Formester form that receives this page's leads (the code after /forms/ in the Formester URL).
 $formester_form_id = 'LRTn5uhum'; // TODO: replace with this page's own form: "LP - Home (Best Eye Hospital in Delhi)"
 $page_title = "Best Eye Hospital in Delhi | Vision Eye Centre - Excellence with a Humane Touch";
@@ -28,7 +29,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo $page_title; ?></title>
     <meta name="description" content="<?php echo $page_description; ?>">
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="canonical" href="<?php echo SITE_URL; ?>/">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 
     <!-- Google Fonts: Inter & Quicksand -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -96,8 +98,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <header class="w-full bg-white/95 backdrop-blur-md border-b border-slate-100 sticky top-0 z-50 transition-all py-3 sm:py-3.5">
         <div class="container mx-auto px-4 md:px-6 flex items-center justify-between gap-2 sm:gap-4">
             <!-- Brand Logo Image -->
-            <a href="index.php" class="flex items-center gap-2 sm:gap-3 group min-w-0">
-                <img src="assets/images/small-logo.png" alt="Vision Eye Centre Logo" class="h-8 sm:h-10 md:h-12 w-auto object-contain flex-shrink-0">
+            <a href="/" class="flex items-center gap-2 sm:gap-3 group min-w-0">
+                <img src="/assets/images/small-logo.png" alt="Vision Eye Centre Logo" class="h-8 sm:h-10 md:h-12 w-auto object-contain flex-shrink-0">
                 <div class="flex flex-col min-w-0">
                     <span class="font-heading font-black text-primary text-sm sm:text-xl md:text-2xl tracking-tight leading-tight group-hover:text-accent transition-colors truncate">Vision Eye Centre</span>
                     <small class="hidden sm:block text-[11px] text-slate-500 font-medium tracking-wide">Excellence … with a humane touch</small>
@@ -119,7 +121,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <main class="flex-grow">
         
         <!-- Hero Section -->
-        <section class="relative pt-12 pb-16 md:pt-16 md:pb-20 overflow-hidden bg-cover bg-center" style="background-image: linear-gradient(to right, rgba(10, 52, 89, 0.92), rgba(15, 76, 129, 0.85)), url('assets/images/vision_eye_hero.png');">
+        <section class="relative pt-12 pb-16 md:pt-16 md:pb-20 overflow-hidden bg-cover bg-center" style="background-image: linear-gradient(to right, rgba(10, 52, 89, 0.92), rgba(15, 76, 129, 0.85)), url('/assets/images/vision_eye_hero.png');">
             <div class="container mx-auto px-4 md:px-6 relative z-10">
                 <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
                     
@@ -139,13 +141,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                         <!-- Quick Links to 3 Featured Services -->
                         <div class="flex flex-wrap gap-3 pt-2">
-                            <a href="cataract-surgery-in-delhi/" class="px-4 py-2 bg-white/15 hover:bg-white/25 border border-white/30 rounded-xl text-xs md:text-sm font-bold text-sky-200 hover:text-white transition-all flex items-center gap-2">
+                            <a href="/cataract-surgery-in-delhi/" class="px-4 py-2 bg-white/15 hover:bg-white/25 border border-white/30 rounded-xl text-xs md:text-sm font-bold text-sky-200 hover:text-white transition-all flex items-center gap-2">
                                 <i class="fa-solid fa-eye text-accent"></i> Cataract Surgery <i class="fa-solid fa-arrow-right text-[10px]"></i>
                             </a>
-                            <a href="eye-treatment-in-delhi/" class="px-4 py-2 bg-white/15 hover:bg-white/25 border border-white/30 rounded-xl text-xs md:text-sm font-bold text-amber-200 hover:text-white transition-all flex items-center gap-2">
+                            <a href="/eye-treatment-in-delhi/" class="px-4 py-2 bg-white/15 hover:bg-white/25 border border-white/30 rounded-xl text-xs md:text-sm font-bold text-amber-200 hover:text-white transition-all flex items-center gap-2">
                                 <i class="fa-solid fa-stethoscope text-gold"></i> Eye Treatment <i class="fa-solid fa-arrow-right text-[10px]"></i>
                             </a>
-                            <a href="lasik-surgery-in-delhi/" class="px-4 py-2 bg-white/15 hover:bg-white/25 border border-white/30 rounded-xl text-xs md:text-sm font-bold text-emerald-200 hover:text-white transition-all flex items-center gap-2">
+                            <a href="/lasik-surgery-in-delhi/" class="px-4 py-2 bg-white/15 hover:bg-white/25 border border-white/30 rounded-xl text-xs md:text-sm font-bold text-emerald-200 hover:text-white transition-all flex items-center gap-2">
                                 <i class="fa-solid fa-wand-magic-sparkles text-emerald-300"></i> LASIK Surgery <i class="fa-solid fa-arrow-right text-[10px]"></i>
                             </a>
                         </div>
@@ -160,7 +162,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                 <p class="text-xs text-slate-500 mt-1">Fill out the form below to book your appointment with our specialist eye doctors.</p>
                             </div>
                             
-                            <form id="lead-form" class="space-y-3.5" action="thankyou.php" method="POST">
+                            <form id="lead-form" class="space-y-3.5" action="/thankyou/" method="POST">
                                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
                                     <div class="space-y-1">
                                         <label for="first-name" class="text-xs font-bold text-slate-700 block">First Name *</label>
@@ -243,7 +245,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="group bg-slate-50 border border-slate-200 rounded-3xl overflow-hidden hover:shadow-2xl transition-all duration-300 flex flex-col justify-between">
                         <div>
                             <div class="h-48 w-full overflow-hidden relative">
-                                <img src="assets/images/vision_eye_hero.png" alt="Cataract Surgery" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                <img src="/assets/images/vision_eye_hero.png" alt="Cataract Surgery" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                                 <span class="absolute top-3 right-3 bg-primary text-white text-xs font-bold px-3 py-1 rounded-full">Phaco & IOL Options</span>
                             </div>
                             <div class="p-6 space-y-3">
@@ -254,7 +256,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             </div>
                         </div>
                         <div class="p-6 pt-0">
-                            <a href="cataract-surgery-in-delhi/" class="inline-flex items-center justify-between w-full px-5 py-3 bg-primary hover:bg-primary-dark text-white font-bold rounded-2xl text-xs transition-all shadow-md">
+                            <a href="/cataract-surgery-in-delhi/" class="inline-flex items-center justify-between w-full px-5 py-3 bg-primary hover:bg-primary-dark text-white font-bold rounded-2xl text-xs transition-all shadow-md">
                                 <span>Explore Cataract Surgery Page</span> <i class="fa-solid fa-arrow-right"></i>
                             </a>
                         </div>
@@ -264,7 +266,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="group bg-slate-50 border border-slate-200 rounded-3xl overflow-hidden hover:shadow-2xl transition-all duration-300 flex flex-col justify-between">
                         <div>
                             <div class="h-48 w-full overflow-hidden relative">
-                                <img src="assets/images/vision_eye_hero.png" alt="Eye Treatment at Vision Eye Centre" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                <img src="/assets/images/vision_eye_hero.png" alt="Eye Treatment at Vision Eye Centre" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                                 <span class="absolute top-3 right-3 bg-amber-500 text-slate-900 text-xs font-bold px-3 py-1 rounded-full">Comprehensive Care</span>
                             </div>
                             <div class="p-6 space-y-3">
@@ -275,7 +277,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             </div>
                         </div>
                         <div class="p-6 pt-0">
-                            <a href="eye-treatment-in-delhi/" class="inline-flex items-center justify-between w-full px-5 py-3 bg-accent hover:bg-sky-600 text-white font-bold rounded-2xl text-xs transition-all shadow-md">
+                            <a href="/eye-treatment-in-delhi/" class="inline-flex items-center justify-between w-full px-5 py-3 bg-accent hover:bg-sky-600 text-white font-bold rounded-2xl text-xs transition-all shadow-md">
                                 <span>Explore Eye Treatment Page</span> <i class="fa-solid fa-arrow-right"></i>
                             </a>
                         </div>
@@ -285,7 +287,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="group bg-slate-50 border border-slate-200 rounded-3xl overflow-hidden hover:shadow-2xl transition-all duration-300 flex flex-col justify-between">
                         <div>
                             <div class="h-48 w-full overflow-hidden relative">
-                                <img src="assets/images/lasik_surgery.png" alt="LASIK Eye Surgery" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                <img src="/assets/images/lasik_surgery.png" alt="LASIK Eye Surgery" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                                 <span class="absolute top-3 right-3 bg-teal text-white text-xs font-bold px-3 py-1 rounded-full">Laser Vision Correction</span>
                             </div>
                             <div class="p-6 space-y-3">
@@ -296,7 +298,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             </div>
                         </div>
                         <div class="p-6 pt-0">
-                            <a href="lasik-surgery-in-delhi/" class="inline-flex items-center justify-between w-full px-5 py-3 bg-teal hover:bg-teal-700 text-white font-bold rounded-2xl text-xs transition-all shadow-md">
+                            <a href="/lasik-surgery-in-delhi/" class="inline-flex items-center justify-between w-full px-5 py-3 bg-teal hover:bg-teal-700 text-white font-bold rounded-2xl text-xs transition-all shadow-md">
                                 <span>Explore LASIK Surgery Page</span> <i class="fa-solid fa-arrow-right"></i>
                             </a>
                         </div>
@@ -316,7 +318,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
                     <div class="bg-white p-6 rounded-3xl border border-slate-200 flex flex-col items-center text-center space-y-3 shadow-xs">
-                        <img src="assets/images/chairman-dr-grover.webp" alt="Prof. (Dr) A. K. Grover" class="w-24 h-24 rounded-full object-cover border-4 border-gold shadow-md">
+                        <img src="/assets/images/chairman-dr-grover.webp" alt="Prof. (Dr) A. K. Grover" class="w-24 h-24 rounded-full object-cover border-4 border-gold shadow-md">
                         <div>
                             <h4 class="font-bold text-primary text-lg">Prof. (Dr) A. K. Grover</h4>
                             <p class="text-xs font-bold text-gold">Padma Shri Awardee &amp; Chairman</p>
@@ -325,7 +327,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     </div>
 
                     <div class="bg-white p-6 rounded-3xl border border-slate-200 flex flex-col items-center text-center space-y-3 shadow-xs">
-                        <img src="assets/images/dr-apoorv-grover.webp" alt="Dr. Apoorv Grover" class="w-24 h-24 rounded-full object-cover border-4 border-accent shadow-md">
+                        <img src="/assets/images/dr-apoorv-grover.webp" alt="Dr. Apoorv Grover" class="w-24 h-24 rounded-full object-cover border-4 border-accent shadow-md">
                         <div>
                             <h4 class="font-bold text-primary text-lg">Dr. Apoorv Grover</h4>
                             <p class="text-xs font-bold text-accent">Medical Director &amp; Retina Specialist</p>
@@ -334,7 +336,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     </div>
 
                     <div class="bg-white p-6 rounded-3xl border border-slate-200 flex flex-col items-center text-center space-y-3 shadow-xs">
-                        <img src="assets/images/dr-tushar-grover.webp" alt="Dr. Tushar Grover" class="w-24 h-24 rounded-full object-cover border-4 border-teal shadow-md">
+                        <img src="/assets/images/dr-tushar-grover.webp" alt="Dr. Tushar Grover" class="w-24 h-24 rounded-full object-cover border-4 border-teal shadow-md">
                         <div>
                             <h4 class="font-bold text-primary text-lg">Dr. Tushar Grover</h4>
                             <p class="text-xs font-bold text-teal">Medical Director &amp; LASIK Specialist</p>
@@ -423,11 +425,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <div class="space-y-4">
                     <h4 class="text-white font-bold text-lg">Quick Links</h4>
                     <ul class="space-y-2 text-xs">
-                        <li><a href="index.php" class="hover:text-accent transition-colors">Home</a></li>
-                        <li><a href="cataract-surgery-in-delhi/" class="hover:text-accent transition-colors">Cataract Surgery</a></li>
-                        <li><a href="eye-treatment-in-delhi/" class="hover:text-accent transition-colors">Eye Treatment</a></li>
-                        <li><a href="lasik-surgery-in-delhi/" class="hover:text-accent transition-colors">LASIK Surgery</a></li>
-                        <li><a href="privacy-policy.php" class="hover:text-accent transition-colors">Privacy Policy</a></li>
+                        <li><a href="/" class="hover:text-accent transition-colors">Home</a></li>
+                        <li><a href="/cataract-surgery-in-delhi/" class="hover:text-accent transition-colors">Cataract Surgery</a></li>
+                        <li><a href="/eye-treatment-in-delhi/" class="hover:text-accent transition-colors">Eye Treatment</a></li>
+                        <li><a href="/lasik-surgery-in-delhi/" class="hover:text-accent transition-colors">LASIK Surgery</a></li>
+                        <li><a href="/privacy-policy/" class="hover:text-accent transition-colors">Privacy Policy</a></li>
                     </ul>
                 </div>
                 <div class="space-y-4">
@@ -476,10 +478,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         'Accept': 'application/json'
                     }
                 }).then(response => {
-                    window.location.href = "thankyou.php?service=" + encodeURIComponent(formData.get('service') || '');
+                    window.location.href = "/thankyou/?service=" + encodeURIComponent(formData.get('service') || '');
                 }).catch(error => {
                     console.error(error);
-                    window.location.href = "thankyou.php?service=" + encodeURIComponent(formData.get('service') || '');
+                    window.location.href = "/thankyou/?service=" + encodeURIComponent(formData.get('service') || '');
                 });
             });
         }

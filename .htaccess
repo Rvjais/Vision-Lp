@@ -1,24 +1,23 @@
-# Old URLs -> current landing page slugs (301, query string e.g. UTMs / gclid is kept).
-# Works wherever this folder is mounted (live: /landing-page/).
+# Page URLs do NOT depend on this file: every page is a real folder (see config.php), so the site
+# works even with rewrites off. This file only adds two extras for LiteSpeed / Apache:
+#   1. blocks public access to the git repo and project files that are not part of the website
+#   2. 301-redirects old URLs (the query string, e.g. UTMs / gclid, is kept)
+# OpenLiteSpeed: needs "Enable Rewrite" + "Auto Load from .htaccess" on the virtual host, and a
+# graceful restart after this file changes, because OpenLiteSpeed caches .htaccess.
 <IfModule mod_rewrite.c>
   RewriteEngine On
 
-  # Old .php page URLs and retired landing pages (Contoura, SMILE Pro, Wavelight Plus) -> Eye Treatment page
-  RewriteCond %{REQUEST_URI} ^(.*/)(contoura-vision|smile-eye|wavelight-plus)\.php$
-  RewriteRule ^(contoura-vision|smile-eye|wavelight-plus)\.php$ %1eye-treatment-in-delhi/ [R=301,L]
-  RewriteCond %{REQUEST_URI} ^(.*/)(contoura-vision-surgery-in-delhi|smile-pro-eye-surgery-in-delhi|wavelight-plus-treatment-in-delhi)/?$
-  RewriteRule ^(contoura-vision-surgery-in-delhi|smile-pro-eye-surgery-in-delhi|wavelight-plus-treatment-in-delhi)/?$ %1eye-treatment-in-delhi/ [R=301,L]
+  # 1) Never serve dotfiles/folders (.git, .env, ...) or project files. /.well-known/ stays open for SSL renewal.
+  RewriteCond %{REQUEST_URI} !^/\.well-known/
+  RewriteRule (^|/)\. - [F,L]
+  RewriteRule ^(.*\.md|vercel\.json|config\.php)$ - [F,L]
 
-  # Misspelled slug + old /landing-page/landing-page/ location of the eye treatment page
-  RewriteCond %{REQUEST_URI} ^(.*/)eye-tratment-in-delhi/?$
-  RewriteRule ^eye-tratment-in-delhi/?$ %1eye-treatment-in-delhi/ [R=301,L]
-  RewriteCond %{REQUEST_URI} ^(.*/)landing-page(/.*)?$
-  RewriteRule ^landing-page(/.*)?$ %1eye-treatment-in-delhi/ [R=301,L]
-
-  # Landing pages live in pages/<slug>/ but are served at the clean URL /<slug>/
-  # 1) add the missing trailing slash
-  RewriteCond %{REQUEST_URI} ^(.*/)([a-z0-9-]+-in-delhi)$
-  RewriteRule ^[a-z0-9-]+-in-delhi$ %1%2/ [R=301,L]
-  # 2) serve the page from pages/ without changing the URL
-  RewriteRule ^([a-z0-9-]+-in-delhi)/(.*)$ pages/$1/$2 [L]
+  # 2) Old URLs
+  # When the site was mounted at /landing-page/ (also the old canonical URLs)
+  RewriteRule ^landing-page(?:/(.*))?$ /$1 [R=301,L]
+  # Retired landing pages (Contoura, SMILE Pro, Wavelight Plus) and the misspelled slug -> Eye Treatment page
+  RewriteRule ^(contoura-vision|smile-eye|wavelight-plus)\.php$ /eye-treatment-in-delhi/ [R=301,L]
+  RewriteRule ^(contoura-vision-surgery-in-delhi|smile-pro-eye-surgery-in-delhi|wavelight-plus-treatment-in-delhi|eye-tratment-in-delhi)/?$ /eye-treatment-in-delhi/ [R=301,L]
+  # /pages/<slug>/, /thankyou.php and /privacy-policy.php redirect from small PHP files instead,
+  # so they keep working even where rewrites are off.
 </IfModule>
